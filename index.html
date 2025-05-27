@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="h-screen bg-emerald-200">
+    <header class="bg-emerald-600 text-white" h-[10vh]>
+        <h1 class="text-4xl text-center font-bold py-2">Tic Tac Toe</h1>
+    </header>
+    <div id="choice" class=" bg-emerald-400 w-full text-3xl flex text-white h-[8vh]">
+        <div id="friend" class="py-1 w-1/2 border-r-2 bg-emerald-500">
+            <p class="text-center">FRIEND</p>
+        </div>
+        <div id="bot" class="py-1 w-1/2">
+            <p class="text-center">BOT</p>
+        </div>
+    </div>
+    <div id="hero" class="h-[80vh] flex flex-col justify-between items-center"> 
+        <div id="top-player-container" class="h-[20vh] w-full flex justify-end items-center p-1">
+            <div id="top-player" class="bg-emerald-500 text-white font-bold text-[18px] p-2 shadow-[5px_5px_10px_rgba(0,0,0,0.2)]">
+                <p><span>logo</span></p>
+                <p><span>Player 1</span></p>
+                <p><span>Score: 0</span></p>
+            </div>
+        </div>
+        <div id="table-container" class="h-[80vh] w-full flex justify-center items-center">
+            <div id="table" class="bg-emerald-100 text-white font-bold text-[18px] grid grid-cols-3 grid-rows-3 gap-2 p-2 shadow-[5px_5px_10px_rgba(0,0,0,0.2)]">
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl">X</div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl">O</div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl"></div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl"></div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl"></div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl"></div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl"></div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl"></div>
+                <div class="w-25 h-25 bg-emerald-400 flex justify-center items-center text-4xl"></div>    
+            </div>
+        </div>
+        <div id="bottom-player-container" class="h-[20vh] w-full flex justify-start items-center">
+            <div id="bottom-player" class="bg-emerald-500 text-white font-bold text-[18px] p-2 shadow-[5px_5px_10px_rgba(0,0,0,0.2)]">
+                <p><span>logo</span></p>
+                <p><span>Player 2</span></p>
+                <p><span>Score: 0</span></p>
+            </div>
+    </div>
+    </div>
+</body>
+</html>
