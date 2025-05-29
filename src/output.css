@@ -9,7 +9,6 @@
       "Courier New", monospace;
     --color-emerald-100: oklch(95% 0.052 163.051);
     --color-emerald-200: oklch(90.5% 0.093 164.15);
-    --color-emerald-300: oklch(84.5% 0.143 164.978);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-emerald-500: oklch(69.6% 0.17 162.48);
     --color-emerald-600: oklch(59.6% 0.145 163.225);
@@ -170,6 +169,9 @@
   }
 }
 @layer utilities {
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .block {
     display: block;
   }
@@ -190,6 +192,9 @@
   }
   .h-\[20vh\] {
     height: 20vh;
+  }
+  .h-\[40vh\] {
+    height: 40vh;
   }
   .h-\[80vh\] {
     height: 80vh;
@@ -251,9 +256,6 @@
   }
   .bg-emerald-600 {
     background-color: var(--color-emerald-600);
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
